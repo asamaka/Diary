@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.diary.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:inputType="textMultiLine"
+        android:gravity="top"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="normal"
+        app:srcCompat="@android:color/holo_blue_bright"
+        android:id="@+id/floatingActionButton2"
+        app:backgroundTint="@android:color/holo_blue_bright"
+        app:rippleColor="@android:color/holo_blue_bright"
+        app:elevation="10dp"
+        android:layout_gravity="bottom|right"
+        app:layout_anchorGravity="bottom|right|end"
+        android:onClick="OnSaveClicked"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="normal"
+        app:srcCompat="@android:color/holo_green_dark"
+        android:id="@+id/floatingActionButton"
+        app:backgroundTint="@android:color/holo_green_dark"
+        app:rippleColor="@android:color/holo_green_dark"
+        app:elevation="10dp"
+        android:layout_gravity="bottom|left"
+        app:layout_anchorGravity="bottom|left|end"
+        android:onClick="OnReadClicked"
+        />
+
+
+</FrameLayout>
